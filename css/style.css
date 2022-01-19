@@ -343,7 +343,7 @@ body {
 /*Блок с видео*/
 
 .videoblock {
-    background-image: url(/img/main/video/video.svg);
+    background-image: url(../img/main/video/video.svg);
     padding: 0 15px;
 }
 
@@ -540,7 +540,7 @@ body {
 /*Блок с геокартой*/
 
 .mapblock {
-    background-image: url(/img/main/map/map.svg);
+    background-image: url(../img/main/map/map.svg);
     padding: 307px 0;
 }
 
