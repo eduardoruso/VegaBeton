@@ -811,7 +811,7 @@ body {
     
     .header_number_pic {
         margin-left: 60.54px;
-        padding-right: 55.43px;
+        padding-right: 30.43px;
     }
     
     .header_logo_pic {
@@ -941,11 +941,32 @@ body {
         width: 1199px;
     }
     
-    .available_text {
+    
+    @media screen and (max-width: 1199px) {
+        .available_text {
+        position: absolute;
+        top: 0;
+        color: white;
+        padding: 180px 0 42px 30px;
+    }
+    }
+    
+    @media screen and (max-width: 1040px) {
+        .available_text {
+        position: absolute;
+        top: 0;
+        color: white;
+        padding: 150px 0 42px 30px;
+    }
+    }
+    
+    @media screen and (max-width: 950px) {
+        .available_text {
         position: absolute;
         top: 0;
         color: white;
         padding: 109px 0 42px 30px;
+    }
     }
 
     .available_text_title {
@@ -1065,14 +1086,34 @@ body {
     .newspad_pic {
         width: 100%;
     }
+
+    @media screen and (max-width: 1199px) {
+        .news_text {
+        position: absolute;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 120%;
+    }
+    }
     
-    .news_text {
+    @media screen and (max-width: 1040px) {
+        .news_text {
+        position: absolute;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 120%;
+    }
+    }
+    
+    @media screen and (max-width: 900px) {
+        .news_text {
         position: absolute;
         font-weight: 500;
         font-size: 18px;
         line-height: 120%;
     }
-
+    }
+    
     .news_text01 {
         padding: 285px 0 0 32px;
     }
@@ -2249,3 +2290,4 @@ body {
     }
     
 }
+
