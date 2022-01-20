@@ -1708,23 +1708,81 @@ body {
     color: white;
     padding: 125px 0 0 15px;
 }
+    
+    @media screen and (max-width: 768px) {
+        .available_text {
+    position: absolute;
+    top: 0;
+    color: white;
+    padding: 250px 0 0 15px;         
+    }
+        
+        .available_text_title {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 100%;
+    }
+        
+        .available_text2 {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 120%;
+    margin-right: 10px;
+}
+        
+    }
+    
+        @media screen and (max-width: 600px) {
+        .available_text {
+    position: absolute;
+    top: 0;
+    color: white;
+    padding: 190px 0 0 15px;         
+    }
+        
+        .available_text_title {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 100%;
+    }
+        
+        .available_text2 {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 120%;
+    margin-right: 10px;
+}
+        
+    }
 
-.available_text_title {
+        @media screen and (max-width: 460px) {
+        .available_text {
+    position: absolute;
+    top: 0;
+    color: white;
+    padding: 112px 0 0 15px;         
+    }
+        
+        .available_text_title {
     font-weight: 500;
     font-size: 40px;
     line-height: 100%;
-}
-
-.available_text1 {
-    display: flex;
-}
-
-.available_text2 {
+    }
+        
+        .available_text2 {
     font-weight: 500;
     font-size: 24px;
     line-height: 120%;
     margin-right: 10px;
 }
+        
+    }
+
+
+.available_text1 {
+    display: flex;
+}
+
 
 /*Блок с видео*/
 
@@ -1829,6 +1887,7 @@ body {
     font-size: 14px;
     line-height: 120%;
 }
+    
 
 .news_text01 {
     padding: 128px 0 0 14px;
@@ -1890,6 +1949,47 @@ body {
     max-width: 270px;
 }
 
+        @media screen and (max-width: 768px) {
+      .news_text {
+    position: absolute;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 120%;
+          padding-top: 200px;
+}
+        
+    }
+    
+        @media screen and (max-width: 600px) {
+     .news_text {
+    position: absolute;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 110%;
+}
+        
+    }
+
+        @media screen and (max-width: 500px) {
+    .news_text {
+    position: absolute;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+}
+    }
+            
+      @media screen and (max-width: 440px) {
+    .news_text {
+    position: absolute;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+        padding-top: 128px;
+}
+        
+    }
+    
 
 /*Блок с выполненными работами*/
 
