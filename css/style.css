@@ -155,9 +155,8 @@ body {
 
 /*Баннер*/
 
-.bannerblock {
+.titleblock {
     margin: 0 auto;
-    overflow: hidden;
     position: relative;
     z-index: 12;
     background: #1D242A;
@@ -329,7 +328,7 @@ input[name="r"] {
 }
 
 @media screen and (max-width: 1199px) {
-    .bannerblock {
+    .titleblock {
         
 
     }
@@ -399,7 +398,7 @@ input[name="r"] {
 }
 
 @media screen and (max-width: 767px) {
-    .bannerblock {
+    .titleblock {
         
         padding: 0 0px;
 
