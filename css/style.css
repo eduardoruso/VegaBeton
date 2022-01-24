@@ -156,18 +156,130 @@ body {
 /*Баннер*/
 
 .bannerblock {
-    background-image: url(../img/main/banner/banner.svg);
-    background-position: right;
-    color: white;
-    padding: 0 15px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 12;
+    background: #1D242A;
+}
+
+.slides {
+    width: 400%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
 }
 
 .banner_content {
-    padding: 120px 0 120px 0;
+    height: 550px;
+    width: 25%;
+    margin: 0 auto;
+    transition: all .6s ease;
 }
+
+#r1:checked ~ .pose {
+    margin-left: 0;
+}
+
+#r2:checked ~ .pose {
+    margin-left: -35%;
+}
+
+#r3:checked ~ .pose {
+    margin-left: -116.7%;
+}
+
+#r4:checked ~ .pose {
+    margin-left: -525%;
+}
+
+.banner_content1 {
+    background: black url(../img/main/banner/banner.svg) center no-repeat;
+    background-position: center;
+    color: white;
+    padding: 0 15px;
+    padding: 117px 0 124px 0;
+    background-size: 100% cover;
+    height: 100%;
+    padding-left: 15px;
+}
+.banner_content2 {
+    background: black url(../img/main/banner/banner2.svg) center no-repeat;
+    background-position: center;
+    color: white;
+    padding: 0 15px;
+    padding: 173px 0 124px 0;
+    background-size: 100% cover;
+    height: 100%;
+    padding-left: 15px;
+}
+.banner_content3 {
+    background: black url(../img/main/banner/banner3.svg) center no-repeat;
+    background-position: center;
+    color: white;
+    padding: 0 15px;
+    padding: 173px 0 124px 0;
+    background-size: 100% cover;
+    height: 100%;
+    padding-left: 15px;
+}
+.banner_content4 {
+    background: black url(../img/main/banner/banner4.svg) center no-repeat;
+    background-position: center;
+    color: white;
+    padding: 0 15px;
+    padding: 173px 0 124px 0;
+    background-size: 100% cover;
+    height: 100%;
+    padding-left: 15px;
+}
+
+.navigation {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+}
+
+.banner_navigation {
+    display: flex;
+    width: 50px;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.bar {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid white;
+    transition: all .3s ease;
+    transform: scale(.8); 
+}
+
+
+.bar:hover {
+    background-color: white;
+    transition: all 1s ease;
+    width: 15px;
+    height: 15px;
+} 
 
 .banner_title {
     margin-bottom: 25px;
+}
+
+.banner_title02 {
+    display: flex;
+    margin-bottom: 34px;
+    flex-wrap: wrap;
 }
 
 .banner_title1 {
@@ -177,6 +289,7 @@ body {
     font-weight: 900;
     font-size: 52px;
     line-height: 61px;
+    margin-right: 11px;
 }
 
 .banner_title2 {
@@ -213,6 +326,225 @@ body {
     color: white;
     font-size: 18px;
     line-height: 21px;
+}
+
+@media screen and (max-width: 1199px) {
+    .bannerblock {
+        
+
+    }
+    
+    .navigation {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 440px;
+    left: 50%;
+}
+    
+    .banner_content1 {
+        background-image: url(../img/pad/main/banner/banner.svg);
+        background-size: 100% 524px;
+        background-position: top;
+        background-color: #1D2027;
+        background-repeat: no-repeat;
+        color: white;
+        padding: 0 15px;
+    }
+    .banner_content2 {
+        background-image: url(../img/pad/main/banner/banner2.svg);
+        background-size: 100% 524px;
+        background-position: top;
+        background-color: #1D2027;
+        background-repeat: no-repeat;
+        color: white;
+        padding: 0 15px;
+    }
+    .banner_content3 {
+        background-image: url(../img/pad/main/banner/banner3.svg);
+        background-size: 100% 524px;
+        background-position: top;
+        background-color: #1D2027;
+        background-repeat: no-repeat;
+        color: white;
+        padding: 0 15px;
+    }
+    .banner_content4 {
+        background-image: url(../img/pad/main/banner/banner4.svg);
+        background-size: 100% 524px;
+        background-position: top;
+        background-color: #1D2027;
+        background-repeat: no-repeat;
+        color: white;
+        padding: 0 15px;
+    }
+    
+    .banner_content {
+        padding: 586px 0 82px 45px;
+    }
+
+    .banner_title {
+        display: flex;
+        margin-bottom: 25px;
+    }
+
+    .banner_title1 {
+        color: transparent;
+        background: linear-gradient(to top left, #FF0000 30%, #065DAD);
+        -webkit-background-clip: text;
+        font-weight: 900;
+        font-size: 52px;
+        line-height: 61px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .bannerblock {
+        position:static;
+        padding: 0 0px;
+
+    }
+    
+    .navigation {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 420px;
+    left: 45%;
+    }
+    
+    .banner_content1 {
+        background-image: url(../img/mobile/main/banner/banner.svg);
+        background-size: 100% 325px;
+        background-position: top;
+        background-color: #1D2027;
+        background-repeat: no-repeat;
+        color: white;
+        padding: 0 15px;
+    }
+    
+    .banner_content2 {
+        background-image: url(../img/mobile/main/banner/banner2.svg);
+        background-size: 100% 325px;
+        background-position: top;
+        background-color: #1D2027;
+        background-repeat: no-repeat;
+        color: white;
+        padding: 0 15px;
+    }
+    
+    .banner_content3 {
+        background-image: url(../img/mobile/main/banner/banner3.svg);
+        background-size: 100% 325px;
+        background-position: top;
+        background-color: #1D2027;
+        background-repeat: no-repeat;
+        color: white;
+        padding: 0 15px;
+    }
+    
+    .banner_content4 {
+        background-image: url(../img/mobile/main/banner/banner4.svg);
+        background-size: 100% 325px;
+        background-position: top;
+        background-color: #1D2027;
+        background-repeat: no-repeat;
+        color: white;
+        padding: 0 15px;
+    }
+
+    .banner_content {
+        padding: 359px 0 58px 15px;
+    }
+
+    .banner_title {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 31px;
+    }
+
+    .banner_title1 {
+        color: transparent;
+        background: linear-gradient(to top left, #FF0000 30%, #065DAD);
+        -webkit-background-clip: text;
+        font-weight: 900;
+        font-size: 52px;
+        line-height: 61px;
+        margin-right: 20px;
+        display: none;
+    }
+    
+    .banner_title2 {
+    font-weight: 900;
+    font-size: 52px;
+    line-height: 61px;
+        display: none;
+}
+    
+    .banner_title02 {
+        
+    }
+
+    .bannermob_title1 {
+        color: transparent;
+        background: linear-gradient(to top left, #FF0000 30%, #065DAD);
+        -webkit-background-clip: text;
+         font-weight: 900;
+        font-size: 36px;
+        line-height: 42px;
+        margin-right: 10px;
+    }
+    
+    .bannermob_title2 {
+        color: white;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 42px;
+        margin-right: 100px;
+    }
+    
+.banner_items {
+    margin-bottom: 26px;
+}
+
+.banner_text {
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 30px;
+    display: none;
+}
+    
+    .bannermob_text {
+        font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+        max-width: 80%;
+    }
+
+    .banner_btn button {
+        display: block;
+    }
+    
+.banner_btn1 {
+    background: #0754A6;
+    padding: 11px 25px 13px 23px;
+    border: 2px solid;
+    border-color: #0754A6;
+    color: white;
+    font-size: 18px;
+    line-height: 21px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+}
+
+.banner_btn2 {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 12px 51px 12px 51px;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    line-height: 21px;
+}
+
 }
 
 /*Колонки*/
@@ -605,7 +937,7 @@ body {
 
 .mapblock {
     background-image: url(../img/main/map/map.svg);
-    padding: 307px 0;
+    padding: 0 0;
     max-width: 100%;
 }
 
@@ -841,35 +1173,6 @@ body {
 
 /*Баннер*/
 
-    .bannerblock {
-        background-image: url(../img/pad/main/banner/banner.svg);
-        background-size: 100% 524px;
-        background-position: top;
-        background-color: #1D2027;
-        background-repeat: no-repeat;
-        color: white;
-        padding: 0 15px;
-
-    }
-
-    .banner_content {
-        padding: 586px 0 82px 45px;
-    }
-
-    .banner_title {
-        display: flex;
-        margin-bottom: 25px;
-    }
-
-    .banner_title1 {
-        color: transparent;
-        background: linear-gradient(to top left, #FF0000 30%, #065DAD);
-        -webkit-background-clip: text;
-        font-weight: 900;
-        font-size: 52px;
-        line-height: 61px;
-        margin-right: 20px;
-    }
 
 /*Колонки*/
 
@@ -1275,12 +1578,16 @@ body {
 
 .mapblock {
     background-image: url(../img/pad/main/map/map.svg);
-    padding: 309px 0;
+    padding: 0px 0;
     max-width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+    
+    .mapdesktop {
+    display: none;
+    }
 
 /*ПОДВАЛ САЙТА*/
 
@@ -1455,105 +1762,6 @@ body {
 
 
 /*Баннер*/
-
-    .bannerblock {
-        background-image: url(../img/mobile/main/banner/banner.svg);
-        background-size: 100% 325px;
-        background-position: top;
-        background-color: #1D2027;
-        background-repeat: no-repeat;
-        color: white;
-        padding: 0 15px;
-
-    }
-
-    .banner_content {
-        padding: 359px 0 58px 5px;
-    }
-
-    .banner_title {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 31px;
-    }
-
-    .banner_title1 {
-        color: transparent;
-        background: linear-gradient(to top left, #FF0000 30%, #065DAD);
-        -webkit-background-clip: text;
-        font-weight: 900;
-        font-size: 52px;
-        line-height: 61px;
-        margin-right: 20px;
-        display: none;
-    }
-    
-    .banner_title2 {
-    font-weight: 900;
-    font-size: 52px;
-    line-height: 61px;
-        display: none;
-}
-
-    .bannermob_title1 {
-         font-weight: 900;
-        font-size: 36px;
-        line-height: 42px;
-        margin-right: 10px;
-    }
-    
-    .bannermob_title2 {
-        color: transparent;
-        background: linear-gradient(to top left, #FF0000 30%, #065DAD);
-        -webkit-background-clip: text;
-        font-weight: 900;
-        font-size: 36px;
-        line-height: 42px;
-        margin-right: 20px;
-    }
-    
-.banner_items {
-    margin-bottom: 26px;
-}
-
-.banner_text {
-    font-weight: 300;
-    font-size: 26px;
-    line-height: 30px;
-    display: none;
-}
-    
-    .bannermob_text {
-        font-weight: 300;
-    font-size: 18px;
-    line-height: 21px;
-        max-width: 80%;
-    }
-
-    .banner_btn button {
-        display: block;
-    }
-    
-.banner_btn1 {
-    background: #0754A6;
-    padding: 11px 25px 13px 23px;
-    border: 2px solid;
-    border-color: #0754A6;
-    color: white;
-    font-size: 18px;
-    line-height: 21px;
-    margin-right: 0px;
-    margin-bottom: 10px;
-}
-
-.banner_btn2 {
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    padding: 12px 51px 12px 51px;
-    background-color: transparent;
-    color: white;
-    font-size: 18px;
-    line-height: 21px;
-}
 
 /*Колонки*/
 
@@ -2120,9 +2328,17 @@ body {
 
 .mapblock {
     background-image: url(../img/mobile/main/map/map.svg);
-    padding: 270px 0;
+    padding: 0px 0;
     max-width: 100%;
 }
+    
+    .mappad {
+        display: none;
+    }
+    
+    .mapdesktop {
+        display: none;
+    }
 
 /*ПОДВАЛ САЙТА*/
 
@@ -2357,6 +2573,14 @@ body {
     .workmob_pic {
         display: none;
     }
+    
+    .mappad {
+        display: none;
+    }
+
+    .mapmobile {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 767px) {
@@ -2389,5 +2613,8 @@ body {
         display: none;
     }
     
+    .mapmobile {
+    display: none;
+    }
 }
 
